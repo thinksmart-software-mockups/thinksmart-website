@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Navigation - Selected page in large view and up */
 @media (min-width: 992px) {
   .selected {
-    background-color: #05285e;
+    background-color: #062f6d;
   }
 }
 
