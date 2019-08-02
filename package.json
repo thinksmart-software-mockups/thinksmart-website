@@ -1,0 +1,21 @@
+{
+  "name": "thinksmart-biz-components",
+  "version": "1.0.0",
+  "description": "separate components for the thinksmart website and other biz sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bootstrap",
+    "sass",
+    "web",
+    "build",
+    "components"
+  ],
+  "author": "Anthony",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.3.0"
+  }
+}
