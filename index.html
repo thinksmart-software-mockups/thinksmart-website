@@ -59,8 +59,9 @@
             integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
 <body>
-    <a id="top"></a>    
-    <header><!-- header start -->
+    <a id="top"></a>
+    <!-- header start -->
+    <header>
         <!-- nav start -->
         <nav class="bg-check navbar fixed-top navbar-default navbar-dark navbar-expand-lg bg-dark nav-gradient p-lg-0">
             <div class="container">
@@ -102,11 +103,12 @@
             </a>
 
             <!-- trial button in tablet mode only start -->
-            <div class="col-7 pr-2 text-right d-none d-sm-none d-md-block d-lg-none">
+            <!-- <div class="col-7 pr-2 text-right d-none d-sm-none d-md-block d-lg-none">
                     <a class="btn-success btn text-center text-white" href="signup.html">
                         <span class="text-center">Free Trial</span>
                     </a>
-            </div><!-- trial button in tablet mode end -->
+            </div> -->
+            <!-- trial button in tablet mode end -->
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -114,32 +116,62 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-lg-2 pt-lg-4 pb-sm-3 pb-lg-4"> 
+                        <li class="nav-item border-bottom-sm-md pl-md-2 pr-md-2">
+                            <a class="nav-link text-white selected" href="index.html">Overview <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item border-bottom-sm-md dropdown pl-md-2 pr-md-2">
+                                <a href="products.html" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">Products</a>
+                                <div class="dropdown-menu">
+                                    <a href="products.html" class="dropdown-item">ClassBiz</a>
+                                    <a href="products.html" class="dropdown-item">DanceBiz</a>
+                                    <a href="products.html" class="dropdown-item">GymnasticsBiz</a>
+                                    <a href="products.html"class="dropdown-item">MusicBiz</a>
+                                    <a href="products.html"class="dropdown-item">SportsBiz</a>
+                                    <a href="products.html"class="dropdown-item">SwimBiz</a>
+                                    <a href="products.html"class="dropdown-item">TennisBiz</a>
+                                </div>
+                            </li>
+                        <!-- <li class="nav-item border-bottom-sm-md dropdown pl-md-2 pr-md-2">
+                            <a href="products.html" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">Products</a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">ClassBiz</a>
+                                <a href="#" class="dropdown-item">DanceBiz</a>
+                                <a href="#" class="dropdown-item">GymnasticsBiz</a>
+                                <a href="#"class="dropdown-item">MusicBiz</a>
+                                <a href="#"class="dropdown-item">SportsBiz</a>
+                                <a href="#"class="dropdown-item">SwimBiz</a>
+                                <a href="#"class="dropdown-item">TennisBiz</a>
+                            </div>
+                        </li> -->
+
+                        <li class="nav-item border-bottom-sm-md pl-md-2 pr-md-2">
+                                <a class="nav-link text-white" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item border-bottom-sm-md pl-md-2 pr-md-2">
+                            <a class="nav-link text-white" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item border-bottom-sm-md pl-md-2 pr-md-2">
+                            <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+            </div>
+
+            <!-- original code before dropdown -->
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
                 <ul class="navbar-nav ml-auto mr-lg-2"> 
                     <li class="nav-item pt-lg-4 pb-lg-4 border-bottom-sm-md active selected pl-md-2 pr-md-2">
                         <a class="nav-link text-white" href="index.html">Overview <span class="sr-only">(current)</span></a>
                     </li>
-                    <!-- <li class="nav-item pt-lg-4 border-bottom-sm-md pb-lg-4">
-                        <a class="nav-link text-white" href="features.html">Features</a>
-                    </li> -->
-                    <!-- <li class="nav-item pt-lg-4 border-bottom-sm-md pb-lg-4">
-                        <a class="nav-link text-white" href="pricing.html">Pricing</a>
-                    </li> -->
-                    <li class="d-none nav-item pt-lg-4 border-bottom-sm-md pb-lg-4 pl-md-2 pr-md-2">
-                            <a class="nav-link text-white" href="products.html">Products</a>
+                    <li class="nav-item pt-lg-4 border-bottom-sm-md pb-lg-4 pl-md-2 pr-md-2">
+                        <a class="nav-link text-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        href="products.html">Products</a>
                     </li>
-                    <li class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Products
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">ClassBiz</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                    <!-- <li class="nav-item pt-lg-4 border-bottom-sm-md pb-lg-4">
-                        <a class="nav-link text-white" href="download.html">Download</a>
-                    </li> -->
+                    <li class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
                     <li class="nav-item pt-lg-4 border-bottom-sm-md pb-lg-4 pl-md-2 pr-md-2">
                             <a class="nav-link text-white" href="blog.html">Blog</a>
                     </li>
@@ -150,11 +182,12 @@
                         <a class="nav-link text-white" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
-                <!-- <a class="btn-success btn d-none d-lg-inline-block mb-1 mb-md-0 ml-md-1 text-white" href="signup.html">Free Trial</a> -->
-            </div>
+            </div> -->
+
         </div>
         </nav><!-- nav end -->        
-    </header><!-- header end -->
+    </header>
+    <!-- header end -->
 
     <!-- this is the hero image section -->  
     <section class=""><!-- main hero image start -->
@@ -297,135 +330,133 @@
     </section>
     <!-- card design call to action end -->
                     
-    <!-- large screen please select -->
-    <section class="d-none d-lg-block mb-xl-3">
-        <div class="container">
-                <h4 class="text-center mb-lg-4 pb-xl-2 pt-xl-2">Please select the product that suits your industry the best</h4>
-
-            <div class="row justify-content-lg-center">
-
-                <div class="col-3">
-                    <img src="assets/img/thinksmart/classbiz-horizontal.svg" class="img-fluid pl-3 pr-3">
-                </div>
-                <div class="col-3">
-                        <img src="assets/img/thinksmart/dancebiz-horizontal.svg" class="img-fluid pl-3 pr-3">
-                </div>
-                <div class="col-3">
-                        <img src="assets/img/thinksmart/musicbiz-horizontal.svg" class="img-fluid  pl-3 pr-3">
-                </div>
-                <div class="col-3">
-                        <img src="assets/img/thinksmart/sportsbiz-horizontal.svg" class="img-fluid  pl-3 pr-3">
-                </div>
-                <div class="col-12 p-2"></div>
-                <div class="col-3">
-                        <img src="assets/img/thinksmart/swimbiz-horizontal.svg" class="img-fluid  pl-3 pr-3">
-                </div>
-                <div class="col-3">
-                        <img src="assets/img/thinksmart/tennisbiz-horizontal.svg" class="img-fluid  pl-3 pr-3">
-                </div>
-                <div class="col-4">
-                        <img src="assets/img/thinksmart/gymnasticsbiz-horizontal.svg" class="img-fluid  pl-3 pr-3">
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-
-        <!-- mobile select -->
-        <section class="container testimonials-card rounded d-md-none">
-                <h5 class="text-center mb-3">Please select the product that suits your industry the best</h5>
-                
-                <!-- all views -->
-                <div class="main-slide-container-for-client-testimonials ml-auto mr-auto" style="max-width: 400px">
-                    <div id="carouselClientIndicators" class="carousel carousel-fade" data-ride="carousel">
-                                <div class="carousel-inner testimonials-slide-container d-flex align-items-center pb-4">
-                                  <div class="carousel-item active">
+    <!-- mobile select -->
+    <section class="container testimonials-card rounded d-md-none">
+            <h5 class="text-center mb-3">Please select the product that suits your industry the best</h5>
+            
+            <!-- all views -->
+            <div class="main-slide-container-for-client-testimonials ml-auto mr-auto" style="max-width: 400px">
+                <div id="carouselClientIndicators" class="carousel carousel-fade" data-ride="carousel">
+                            <div class="carousel-inner testimonials-slide-container d-flex align-items-center pb-4">
+                                <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row justify-content-center align-items-center">
+                                        <div class="col-10">
+                                            <a href="https://www.classbiz.net" target="_blank"><img src="assets/img/thinksmart/classbiz-horizontal.svg" class="img-fluid p-2" alt="classbiz"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="carousel-item">
                                     <div class="container">
-                                        <div class="row justify-content-center align-items-lg-center pt-lg-4 pb-lg-4">
-                                            <div class="col-10">
-                                                    <img src="assets/img/thinksmart/classbiz-horizontal.svg" class="img-fluid pb-1" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                        <div class="container">
-                                                <div class="row justify-content-center align-items-lg-center pt-lg-4 pb-lg-4">
-                                                    <div class="col-10">
-                                                            <img src="assets/img/thinksmart/dancebiz-horizontal.svg" class="img-fluid" alt="">
-                                                    </div>
-                                                </div>
-                                        </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                        <div class="container">
-                                                <div class="row justify-content-center align-items-lg-center pt-lg-4 pb-lg-4">
-                                                    <div class="col-10">
-                                                            <img src="assets/img/thinksmart/gymnasticsbiz-horizontal.svg" class="img-fluid" alt="">
-                                                    </div>
-                                                </div>
-                                        </div>
-                                  </div>
-                                  <div class="carousel-item">
-                                        <div class="container">
-                                                <div class="row justify-content-center align-items-lg-center pt-lg-4 pb-lg-4">
-                                                    <div class="col-10">
-                                                            <img src="assets/img/thinksmart/musicbiz-horizontal.svg" class="img-fluid" alt="">
-                                                    </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                            <div class="container">
-                                                    <div class="row justify-content-center align-items-lg-center pt-lg-4 pb-lg-4">
-                                                        <div class="col-10">
-                                                            <img src="assets/img/thinksmart/sportsbiz-horizontal.svg" class="img-fluid" alt="">
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                            <div class="container">
-                                                    <div class="row justify-content-center align-items-lg-center pt-lg-4 pb-lg-4">
-                                                        <div class="col-10">
-                                                            <img src="assets/img/thinksmart/swimbiz-horizontal.svg" class="img-fluid" alt="">
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                            <div class="container">
-                                                    <div class="row justify-content-center align-items-lg-center pt-lg-4 pb-lg-4">
-                                                        <div class="col-10">
-                                                            <img src="assets/img/thinksmart/tennisbiz-horizontal.svg" class="img-fluid" alt="">
-                                                        </div>
+                                            <div class="row justify-content-center align-items-center">
+                                                <div class="col-10">
+                                                        <a href="https://www.dance-biz.com" target="_blank"><img src="assets/img/thinksmart/dancebiz-horizontal.svg" class="img-fluid p-2" alt="dancebiz"></a>
                                                     </div>
                                             </div>
                                     </div>
                                 </div>
-                                <ol class="carousel-indicators">
-                                        <li data-target="#carouselClientIndicators" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carouselClientIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselClientIndicators" data-slide-to="2"></li>
-                                        <li data-target="#carouselClientIndicators" data-slide-to="3"></li>
-                                        <li data-target="#carouselClientIndicators" data-slide-to="4"></li>
-                                        <li data-target="#carouselClientIndicators" data-slide-to="5"></li>
-                                        <li data-target="#carouselClientIndicators" data-slide-to="6"></li>
-                                </ol>
-                                <a class="carousel-control-prev mt-n4" href="#carouselClientIndicators" role="button" data-slide="prev">
-                                  <span class="carousel-control-prev-icon mt-xl-n3" aria-hidden="true"></span>
-                                  <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next mt-n4" href="#carouselClientIndicators" role="button" data-slide="next">
-                                  <span class="carousel-control-next-icon mt-xl-n3" aria-hidden="true"></span>
-                                  <span class="sr-only">Next</span>
-                                </a>
-                    </div>
-                                     
+                                <div class="carousel-item">
+                                    <div class="container">
+                                            <div class="row justify-content-center align-items-center">
+                                                <div class="col-10">
+                                                        <a href="https://www.gymnasticsbiz.net" target="_blank"><img src="assets/img/thinksmart/gymnasticsbiz-horizontal.svg" class="img-fluid" alt="gymnasticsbiz"></a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="container">
+                                            <div class="row justify-content-center align-items-center">
+                                                <div class="col-10">
+                                                        <a href="https://www.musicbiz.net" target="_blank"><img src="assets/img/thinksmart/musicbiz-horizontal.svg" class="img-fluid p-2" alt="musicbiz"></a>
+                                                    </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <div class="container">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-10">
+                                                            <a href="https://www.sportsbiz.net" target="_blank"><img src="assets/img/thinksmart/sportsbiz-horizontal.svg" class="img-fluid p-2" alt="sportsbiz"></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <div class="container">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-10">
+                                                            <a href="https://www.swimbiz.net" target="_blank"><img src="assets/img/thinksmart/swimbiz-horizontal.svg" class="img-fluid p-2" alt="swimbiz"></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="carousel-item">
+                                        <div class="container">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-10">
+                                                            <a href="https://www.tennisbiz.com" target="_blank"><img src="assets/img/thinksmart/tennisbiz-horizontal.svg" class="img-fluid p-2" alt="tennisbiz"></a>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <ol class="carousel-indicators">
+                                    <li data-target="#carouselClientIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselClientIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselClientIndicators" data-slide-to="2"></li>
+                                    <li data-target="#carouselClientIndicators" data-slide-to="3"></li>
+                                    <li data-target="#carouselClientIndicators" data-slide-to="4"></li>
+                                    <li data-target="#carouselClientIndicators" data-slide-to="5"></li>
+                                    <li data-target="#carouselClientIndicators" data-slide-to="6"></li>
+                            </ol>
+                            <a class="carousel-control-prev mt-n4" href="#carouselClientIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon mt-xl-n3" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next mt-n4" href="#carouselClientIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon mt-xl-n3" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                 </div>
-        </section>
-        <!-- mobile select -->
+                                    
+            </div>
+    </section>
+    <!-- mobile select -->
+
+    <!-- large screen please select -->
+    <section class="d-none d-lg-block mb-xl-3">
+        <div class="container">
+            <h4 class="text-center mb-lg-4 pb-xl-2 pt-xl-2 bounce-bottom">Please select the product that suits your industry the best</h4>
+            <div class="row justify-content-lg-center">
+                <div class="col-3">
+                    <a href="https://www.classbiz.net" target="_blank" class=""><img src="assets/img/thinksmart/classbiz-horizontal.svg" class="fade-in-1 img-fluid zoom pl-lg-4 pr-lg-4" alt="classbiz"></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.dance-biz.com" target="_blank"><img src="assets/img/thinksmart/dancebiz-horizontal.svg" class="fade-in-2 img-fluid zoom pl-lg-4 pr-lg-4" alt="dancebiz"></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.musicbiz.net" target="_blank"><img src="assets/img/thinksmart/musicbiz-horizontal.svg" class="fade-in-3 img-fluid zoom pl-lg-4 pr-lg-4" alt="musicbiz"></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.sportsbiz.net" target="_blank"><img src="assets/img/thinksmart/sportsbiz-horizontal.svg" class="fade-in-4 img-fluid zoom pl-lg-4 pr-lg-4" alt="sportsbiz"></a>
+                </div>
+                <div class="col-12 p-2"></div>
+                <div class="col-3">
+                    <a href="https://www.swimbiz.net" target="_blank"><img src="assets/img/thinksmart/swimbiz-horizontal.svg" class="fade-in-1 shake-bottom img-fluid zoom pl-lg-4 pr-lg-4" alt="swimbiz"></a>
+                </div>
+                <div class="col-3">
+                    <a href="https://www.tennisbiz.com" target="_blank"><img src="assets/img/thinksmart/tennisbiz-horizontal.svg" class="fade-in-2 shake-bottom img-fluid zoom pl-lg-4 pr-lg-4" alt="tennisbiz"></a>
+                </div>
+                <div class="col-4">
+                    <a href="https://www.gymnasticsbiz.net" target="_blank"><img src="assets/img/thinksmart/gymnasticsbiz-horizontal.svg" class="fade-in-2 shake-bottom img-fluid zoom pl-lg-4 pr-lg-4" alt="gymnasticsbiz"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
         <!-- tablet only select -->
 
