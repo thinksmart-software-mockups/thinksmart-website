@@ -11124,22 +11124,28 @@ h3 {
 
 @media screen and (min-width: 576px) {
   .product-card-container {
-    height: 410px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .product-card-container {
-    height: 460px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .product-card-container {
-    height: 420px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 1200px) {
   .product-card-container {
-    height: 400px;
+    height: 305px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .gymnastics-biz-logo {
+    height: 132px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gymnastics-biz-logo {
+    height: 113px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gymnastics-biz-logo {
+    height: 138px;
   }
 }
 
