@@ -10086,7 +10086,7 @@ h3 {
   height: 100%;
   width: 100%;
   display: block;
-  background-image: url("../img/thinksmart/thinksmart-mobile-bg-3.png");
+  background-image: url("../img/thinksmart/thinksmart-mobile-bg-3.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #0b7bf3;
@@ -11101,6 +11101,7 @@ h3 {
   height: 100%;
 }
 
+/* thinksmart software specific styles */
 .zoom {
   transition: transform 0.2s;
 }
@@ -11121,34 +11122,9 @@ h3 {
   height: 45px;
 }
 
-.logo-card {
-  height: 50px;
-  width: 100%;
-  margin-bottom: 2.5rem;
-}
-@media (min-width: 576px) {
-  .logo-card {
-    height: 110px;
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 768px) {
-  .logo-card {
-    height: 100px;
-  }
-}
-@media (min-width: 992px) {
-  .logo-card {
-    height: 120px;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media screen and (min-width: 576px) {
   .product-card-container {
-    height: 420px;
+    height: 410px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -11158,12 +11134,12 @@ h3 {
 }
 @media screen and (min-width: 992px) {
   .product-card-container {
-    height: 480px;
+    height: 420px;
   }
 }
 @media screen and (min-width: 1200px) {
   .product-card-container {
-    height: 425px;
+    height: 400px;
   }
 }
 
